@@ -4,6 +4,7 @@
     <title>
         Varmilo's Blog
     </title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -29,6 +30,22 @@
         framework which is the reason why I'm learning HTML. <br> I've knowledge in relational databases and I've a 
         bit of knowledge in relation databases (SQL)
     </p>
+
+    <ul class="listcenter">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+    <ol>
+        <li>Elemento</li>
+        <li>Elemento</li>
+        <li value="800">Elemento</li>
+        <li>
+            <ol style="list-style-type: lower-alpha;">
+                <li>Subelemento</li>
+            </ol>
+        </li>
+    </ol>
     
     <hr>
 
@@ -37,15 +54,24 @@
         <br>
         <a target="_blank" href="https://www.github.com/VarmiloVA">My GitHub</a>
 
-        <form align="center">
+        <form align="center" action="/formulario" method="POST">
             <label for="name">Name: </label>
             <input type="text" id="name" name="name" placeholder="Your name" />
 
             <!--Another way to do the same thing:-->
             <br><br>
-            <input type="email" name="aka" placeholder="Your email" />
+            <input value="example@service.com" type="email" name="email" placeholder="Your email" />
+            <br>
+            <input type="password" name="password" placeholder="Password" />
+
+            <!--Other type of typebox-->
             <br><br>
-            <input type="password" name="aka" placeholder="Password" />
+            <label for="comment"></label>
+            <textarea id="comment" rows="10" cols="80"placeholder="Add a comment" name="comment">Este es un valor por defecto</textarea>
+            <br>
+            <button type="button">Este botón no funciona, ha de ser configurado con js</button>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset Form</button>
         </form>
     </p>
 
