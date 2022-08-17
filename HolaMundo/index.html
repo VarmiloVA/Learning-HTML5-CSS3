@@ -4,13 +4,26 @@
     <title>
         Varmilo's Blog
     </title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        table, th, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        div.container {
+            text-align: center;
+        }
+
+        ul.myUL {
+            display: inline-block;
+            text-align: left;
+        }
+    </style>
 </head>
 
 <body>
     <!-- I'm adding things that not appears in the tutorial
     'cause I've previous basic knowledge of HTML -->
-
     <h1 align="center">
         Varmilo's Blog
     </h1>
@@ -27,15 +40,35 @@
 
     <p align="center">
         I'm a Python dev and I'm currently learning <span style="color: darkred; font-weight: bold">Django</span> 
-        framework which is the reason why I'm learning HTML. <br> I've knowledge in relational databases and I've a 
+        framework and that's the reason why I'm learning HTML. <br> I've knowledge in relational databases and I've a 
         bit of knowledge in relation databases (SQL)
     </p>
 
-    <ul class="listcenter">
-        <li>Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
-    </ul>
+    <div class="container">
+        <h2>My main habilities</h2>
+        <ul class="myUL">
+            <li>Python</li>
+            <li>MySQL</li>
+            <li>GIT</li>
+        </ul>
+    
+        <h2>Currently learning</h2>
+        <ul class="myUL">
+            <li>Django</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+        </ul>
+
+        <h2>To learn in the near future</h2>
+        <ul class="myUL">
+            <li>TailwindCSS</li>
+            <li>AWS</li>
+            <li>Apache</li>
+            <li>Firebase</li>
+        </ul>
+    </div>
+  
+    <!--
     <ol>
         <li>Elemento</li>
         <li>Elemento</li>
@@ -48,6 +81,7 @@
             </ol>
         </li>
     </ol>
+    -->
     
     <hr>
 
@@ -55,27 +89,58 @@
         <img src="img/github_logo.png" width="80px" height="auto" />
         <br>
         <a target="_blank" href="https://www.github.com/VarmiloVA">My GitHub</a>
-
-        <form align="center" action="/formulario" method="POST">
-            <label for="name">Name: </label>
-            <input type="text" id="name" name="name" placeholder="Your name" />
-
-            <!--Another way to do the same thing:-->
-            <br><br>
-            <input value="example@service.com" type="email" name="email" placeholder="Your email" />
-            <br>
-            <input type="password" name="password" placeholder="Password" />
-
-            <!--Other type of typebox-->
-            <br><br>
-            <label for="comment"></label>
-            <textarea id="comment" rows="10" cols="80"placeholder="Add a comment" name="comment">Este es un valor por defecto</textarea>
-            <br>
-            <button type="button">Este botón no funciona, ha de ser configurado con js</button>
-            <button type="submit">Submit</button>
-            <button type="reset">Reset Form</button>
-        </form>
     </p>
+
+    <br>
+    <table style="width: 500px" align="center">
+        <thead>
+            <tr>
+                <th>Repository</th>
+                <th>Forks</th>
+                <th>Stars</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Learning-Django</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Food-calories-CRUD</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+        <tfood>
+            <td></td>
+            <td></td>
+            <td>Total: 0⭐</td>
+        </tfood>
+    </table>
+
+    <hr>
+
+    <form align="center" action="/formulario" method="POST">
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" placeholder="Your name" />
+
+        <!--Another way to do the same thing:-->
+        <br><br>
+        <input value="example@service.com" type="email" name="email" placeholder="Your email" />
+        <br>
+        <input type="password" name="password" placeholder="Password" />
+
+        <!--Other type of typebox-->
+        <br><br>
+        <label for="comment"></label>
+        <textarea id="comment" rows="10" cols="80"placeholder="Add a comment" name="comment">Este es un valor por defecto</textarea>
+        <br>
+        <button type="button">Este botón no funciona, ha de ser configurado con js</button>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset Form</button>
+    </form>
+    
 
 </body>
 </html>
