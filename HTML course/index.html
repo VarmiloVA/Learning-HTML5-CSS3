@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="blog, first web page, html, programming, typing" />
+    <meta name="description" content="Mi primera página web usando html, lenguaje el cuál estoy aprendiendo
+    para usarlo junto a Django" />
+    <meta name="author" content="Daniel Atanasov. Aka: Varmilo" />
+    <meta name="robots" content="noindex" />
+    <link rel="icon" href="img/logo.ico" />
+
+    <title>Varmilo's Blog</title>     
+    <style>
+        table, th, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        div.centered-container {
+            text-align: center;
+        }
+
+        ul.myUL {
+            display: inline-block;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="#footer">Footer</a>
+            </li>
+        </nav>
+    </header>
+
+    <!-- I'm adding things that not appears in the tutorial
+    'cause I've previous basic knowledge of HTML -->
+    <article>
+        <section>
+            <h1 align="center">
+                Varmilo's Blog
+            </h1>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2 align="center">
+                I'm learning HTML
+            </h2>
+
+            <h3 align="center">
+                but...
+            </h3>
+        
+
+    
+            <p align="center">
+                I'm a Python dev and I'm currently learning <span style="color: darkred; font-weight: bold">Django</span> 
+                framework and that's the reason why I'm learning HTML. <br> I've knowledge in relational databases and I've a 
+                bit of knowledge in relation databases (SQL)
+            </p>
+        </section>
+    
+        <section>
+            <div class="centered-container">
+                <h2>My main habilities</h2>
+                <ul class="myUL">
+                    <li>Python</li>
+                    <li>MySQL</li>
+                    <li>GIT</li>
+                </ul>
+    
+                <h2>Currently learning</h2>
+                <ul class="myUL">
+                    <li>Django</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                </ul>
+
+                <h2>To learn in the near future</h2>
+                <ul class="myUL">
+                    <li>TailwindCSS</li>
+                    <li>AWS</li>
+                    <li>Apache</li>
+                    <li>Firebase</li>
+                </ul>
+                <!--
+                <ol>
+                    <li>Elemento</li>
+                    <li>Elemento</li>
+                    <li value="800">Elemento</li>
+                    <li>
+                        <ol style="list-style-type: upper-roman;">
+                            <li>Subelemento</li>
+                            <li>Subelemento</li>
+                            <li>Subelemento</li>
+                        </ol>
+                    </li>
+                </ol>
+                -->
+            </div>
+        </section>
+  
+        <hr>
+    
+        <section>
+            <h2 align="center"><a target="_blank" href="https://www.github.com/VarmiloVA"><b>My GitHub</b></a></h2>
+
+            <p align="center">
+                <img src="img/github_logo.png" width="80px" height="auto" />
+            </p>
+
+            <br>
+
+            <table style="width: 500px" align="center">
+                <thead>
+                    <tr>
+                        <th>Repository</th>
+                        <th>Forks</th>
+                        <th>Stars</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Learning-Django</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Food-calories-CRUD</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+                <tfood>
+                    <td></td>
+                    <td></td>
+                    <td>Total: 0⭐</td>
+                </tfood>
+            </table>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2 align="center">⌨️My typing skills (+140wpm)</h2>
+            <p align="center">
+                <video src="C:\Users\varmi\Downloads\Carrera Velocidáctil 514ppm.mov" controls width="400px" height="auto"></video>
+            </p>
+        </section>
+
+        <hr>
+    </article>
+    <aside>
+        <!--Esto es para añadir contenido, como el nombre indica, aside. Por defecto
+        lo coloca como un párrafo más-->
+    </aside>
+
+    <footer id="footer">
+        <form align="center" action="/formulario" method="POST">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" placeholder="Your name" required=""/>
+
+            <!--Another way to do the same thing:-->
+            <br><br>
+            <input value="example@service.com" type="email" name="email" placeholder="Your email" required=""/>
+            <br>
+            <input type="password" name="password" placeholder="Password" />
+
+            <!--Other type of typebox-->
+            <br><br>
+            <label for="comment"></label>
+            <textarea id="comment" rows="10" cols="80"placeholder="Add a comment" name="comment" required="">Este es un valor por defecto</textarea>
+            <br>
+            <button type="button">Este botón no funciona, ha de ser configurado con js</button>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset Form</button>
+        </form>
+    </footer>
+
+</body>
+</html>
