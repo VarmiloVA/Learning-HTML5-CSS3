@@ -1,4 +1,33 @@
 html {
-    text-align: center;
+    text-align: left;
+}
+
+#happy {
     color: tomato;
+}
+
+p.very {
+    color: slateblue;
+}
+
+p.extra {
+    color: palevioletred;
+}
+
+b {
+    font-weight: bolder;
+    color: black;
+}
+
+div p {
+    font-weight: lighter;
+    color: goldenrod;
+}
+
+div h2, h3 {
+    font-weight: lighter;
+    color: aquamarine;
+    background-color: blueviolet;
+    width: 400px;
+    text-align: center;
 }
