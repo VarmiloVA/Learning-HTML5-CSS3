@@ -1,4 +1,4 @@
-html {
+body {
     text-align: left;
 }
 
@@ -12,7 +12,7 @@ p.very {
 
 p.extra {
     color: palevioletred;
-}
+} 
 
 b {
     font-weight: bolder;
@@ -24,10 +24,29 @@ div p {
     color: goldenrod;
 }
 
-div h2, h3 {
+div h2, div h3 {
     font-weight: lighter;
     color: aquamarine;
     background-color: blueviolet;
     width: 400px;
     text-align: center;
+}
+
+h3.nodiv {
+    background-color: yellow;
+    color: red;
+    width: 480px;
+}
+
+* {
+    font-size: 24px;
+    color: black;
+} /*Este selector universal solo cambia propiedades que no hayan sido
+definidas previamente*/
+
+.color {
+    color: #aaa;
+    /*Si se usan 3 carácteres el primero indica rojo, el segundo 
+    verde y el tercero azul. Todos van del 0 (ausencia) la f (presencia total
+    del color), i.e, 0<1<2<3<4<5<6<a<b<c<d<e<f*/
 }
