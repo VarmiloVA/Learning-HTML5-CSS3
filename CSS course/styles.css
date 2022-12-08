@@ -42,11 +42,51 @@ h3.nodiv {
     font-size: 24px;
     color: black;
 } /*Este selector universal solo cambia propiedades que no hayan sido
-definidas previamente*/
+definidas previamente, cambia las propiedades de <html>*/
 
-.color {
-    color: #aaa;
+.color_hexa {
+    /* color: #aaa; */
     /*Si se usan 3 carácteres el primero indica rojo, el segundo 
     verde y el tercero azul. Todos van del 0 (ausencia) la f (presencia total
     del color), i.e, 0<1<2<3<4<5<6<a<b<c<d<e<f*/
+    color: #6aaef0;
+    /*Funciona igual que con tres carácteres pero
+    hay dos para cada color, los dos primeros rojo, los
+    dos segundos verde y los dos últimos azul.
+    El segundo dígito actúa como decimal
+    a3f0a0 -> a.3R FG AB*/
+}
+
+.color_rgb {
+    color: rgb(200, 255, 100);
+}
+
+.border {
+    /* border: 5px red outset; */
+    /*Tipos de borde:
+        dotted
+        dashed
+        solid
+        double
+        groove
+        ridge
+        inset
+        outsed
+        none
+        hidden
+    */
+    border-style: groove;
+    border-color: red;
+    border-radius: 10px;
+    /* border-width: 8px; */
+    /* border-width: 1in; */
+    /* border-width: 5mm; */
+    /* border-width: 5pt (1pt -> 1/72in) */
+    /*border-width: 1pc; (1pc -> 12pt)*/ 
+    /*border-width: 2em;*/ /* (2 veces el tamaño
+                        de la fuente usada) */
+    border-width: 2rem; /* 1 rem = 16px (si no
+                        se cambia el font-size
+                        de <html></html>) */
+    
 }
